@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tuff Untested</title>
-    <meta charset="UTF-8" />
-    <link type="text/css" rel="stylesheet" href="files.css" />
-  </head>
 
-  <body>
-    <div class="window">
-      <div class="title-bar">
-        <div>Tuff Untested Builds</div>
-        <div class="buttons"><span>_</span><span>□</span><span>X</span></div>
+<head>
+  <title>Tuff Untested</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="files.css" />
+</head>
+
+<body>
+  <div class="window">
+    <header class="title-bar">
+      <div class="title">Tuff Untested Builds</div>
+      <div class="buttons">
+        <button class="btn-min" aria-label="minimize">─</button>
+        <button class="btn-max" aria-label="maximize">□</button>
+        <button class="btn-close" aria-label="close">✕</button>
       </div>
+    </header>
 
-      <div class="menu-bar">
-        <span>File</span>
-        <span>Edit</span>
-        <span>View</span>
-        <span>Help</span>
-      </div>
+    <nav class="menu-bar" aria-label="Main menu">
+      <a>File</a>
+      <a>Edit</a>
+      <a>View</a>
+      <a>Help</a>
+    </nav>
 
-      <div class="content">
-        <h2>Tuff Client Untested Builds!!</h2>
-        <p>
-          This site hosts experimental, unstable, or work-in-progress builds!
-        </p>
-        <li>
-          Todo List:
-          <a
-            href="https://www.notion.so/2b231fbfb15c808cbc59d6e830d30405?v=2b231fbfb15c812eb5a7000caef1dcc1"
-            >Enter!</a
-          >
-        </li>
-        <h3>LATEST RELEASE -></h3><a href="https://github.com/TuffNetwork/TuffX-Plugin/releases/download/1.1.0/TuffX.jar" download="filename"> Y0 PLUGIN DOWNLOAD</a>
+    <main class="content">
+      <section class="intro">
+        <h1>Tuff Client Untested Builds</h1>
+        <p class="lead">Experimental and work-in-progress builds. Use at your own risk.</p>
+        <div class="quick-links">
+          <a class="primary" href="https://github.com/TuffNetwork/TuffX-Plugin/releases/download/1.2.0/TuffX.jar"
+            download>Download Y0 Plugin 1.2.0</a>
+          <a href="https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Errors? Try this
+            first!</a>
+        </div>
+      </section>
 
-        <li><a href="https://client.tuff.ws">Release Version</a></li>
-        <h3>If you are facing bugs, do this first! (Do it before you update too) -> <a href="https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Guide</a></h3>
-        <hr />
-        <h3>📁 Latest Untested Builds</h3>
+      <section class="builds">
+        <h2>Latest Build</h2>
         <ul>
-          <li>Play: <a href="files/1_1UT8/WASM/">1.1UT8 (WASM)</a> |
-          <a href="files/1_1UT8/JS/">1.1UT8 (JS)</a></li>
-          <li>Download:
-          <a href="files/1_1UT8/WASM/Tuff_Client_Offline_WASM.html" download="filename">1.1UT8 WASM OFFLINE</a>|
-          <a href="files/1_1UT8/JS/Tuff_Client_JS.html" download="filename">1.1UT8 JS OFFLINE</a>
-</li>
-        </ul>
+          <li>Play: <a href="files/1_1UT12/WASM/">1.1UT12 (WASM)</a> | <a href="files/1_1UT12/JS/">1.1UT12 (JS)</a></li>
+          <li>Download: <a href="files/1_1UT12/WASM/Tuff_Client_Offline_WASM.html" download>1.1UT12 WASM OFFLINE</a> |
+            <a href="files/1_1UT12/JS/Tuff_Client_JS.html" download>1.1UT12 JS OFFLINE</a></li>
+            <li>Latest Release Builds: <a href="https://github.com/TuffNetwork/Tuff-Client-Builds/releases/tag/1.1UT12">Go</a></li>
 
-        <hr />
+          </ul>
 
-        <h3>🛠 Support</h3>
-        <ul>
-          <li>
-            <a href="https://discord.gg/Ek3SqHV4hp">Report Bugs on Discord!</a>
-          </li>
-          <li>
-            <a href="https://github.com/TuffNetwork/BrickTesting"
-              >Host Your Own!
-            </a>
-          </li>
-        </ul>
-        <p>Naming: UT is Untested. US is unstable. DV is Dev</p>
-        <hr />
-                <h3>Archived</h3> Builds</h3>
-        <ul>
-          <li><a href="files/1_1UT7/WASM/">1.1UT7 (WASM)</a></li>
+
+        <section class="support">
+          <h2>🛠 Support</h2>
+          <ul>
+            <li><a href="https://discord.com/invite/7UnXG6bE3b">Report Bugs on Discord</a></li>
+            <li><a href="https://github.com/TuffNetwork/BrickTesting">Host Your Own</a></li>
+          </ul>
+        </section>
+
+        <section class="archive">
+          <h2>Archived Builds</h2>
+          <ul>
+            <li><a href="files/1_1UT11/WASM/">1.1UT11 (WASM)</a></li>
+            <li><a href="files/1_1UD10/WASM/">1.1UD10 (WASM)</a></li>
+            <li><a href="files/1_1UT9/WASM/">1.1UT9 (WASM)</a></li>
+            <li><a href="files/1_1UT8/WASM/">1.1UT8 (WASM)</a></li>
+            <li><a href="files/1_1UT7/WASM/">1.1UT7 (WASM)</a></li>
             <li><a href="files/1_1UT6/WASM/">1.1UT6 (WASM)</a></li>
-          <li><a href="files/1_1UT6/JS/">1.1UT6 (JS)</a></li>
-          <li><a href="files/1_1UT5/WASM/">1.1UT5 (WASM)</a></li>
-          <li><a href="files/1_1UT5/JS/">1.1UT5 (JS)</a></li>
-        </ul>
-        <h3>  Latest Version: 1.1UT8 | Published on: Dec 6, 2025</h3>
-      <p>- Major optimizations</p>
-      <p>- Autologin module</p>
-      <p>- NoGlint module</p>
-      <p>- NoRain module</p>
-      <p>- tnt countdown</p>
-      <p>- Fixed y0</p>
+            <li><a href="files/1_1UT6/JS/">1.1UT6 (JS)</a></li>
+            <li><a href="files/1_1UT5/WASM/">1.1UT5 (WASM)</a></li>
+            <li><a href="files/1_1UT5/JS/">1.1UT5 (JS)</a></li>
+          </ul>
+        </section>
 
-      </div>
-      <div class="status-bar">Status: Active</div>
+        <aside class="notes">
+          <h3>Release Notes</h3>
+          <p><strong>Latest Version:</strong> 1.1UT12 — Published on: Dec 30, 2025</p>
+          <ul>
+            <li>Recording Studio</li>
+            <li>Fixed crash for WebGL 1.0</li>
 
-      
-    </div>
-  </body>
+          </ul>
+        </aside>
+    </main>
+
+    <footer class="status-bar">Status: Active</footer>
+  </div>
+</body>
+
 </html>
