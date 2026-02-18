@@ -1,98 +1,217 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Tuff Untested</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="files.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 0.95rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .game-card {
+            background-color: #242424;
+            border: 1px solid #333;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .game-card:hover {
+            background-color: #2a2a2a;
+            border-color: #444;
+            transform: translateY(-2px);
+        }
+
+        .game-card:active {
+            transform: translateY(0);
+        }
+
+        .game-card h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        .game-card p {
+            font-size: 0.85rem;
+            color: #999;
+            font-weight: 300;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
 <body>
-  <div class="window">
-    <header class="title-bar">
-      <div class="title">Tuff Untested Builds</div>
-      <div class="buttons">
-        <button class="btn-min" aria-label="minimize">─</button>
-        <button class="btn-max" aria-label="maximize">□</button>
-        <button class="btn-close" aria-label="close">✕</button>
-      </div>
+    <header>
+        <h1>GAMES</h1>
+        <p class="subtitle">Minimalist browser gaming</p>
     </header>
 
-    <nav class="menu-bar" aria-label="Main menu">
-      <a>File</a>
-      <a>Edit</a>
-      <a>View</a>
-      <a>Help</a>
-    </nav>
+    <main>
+        <div class="games-grid">
+            <a href="agar.html" class="game-card">
+                <h3>Agar.io</h3>
+                <p>Multiplayer cell game</p>
+            </a>
 
-    <main class="content">
-      <section class="intro">
-        <div class="announce">
-        <h1>Wisp Proxy Link</h1>
-        <h3>Usernames:</h3>
-        <a href="https://wisp-2v57.onrender.com">TheRealNoob1232</a>
-      </div>
-        <h1>Tuff Client Untested Builds</h1>
-        <p class="lead">Experimental and work-in-progress builds. Use at your own risk.</p>
-        <div class="quick-links">
-          <a class="primary" href="https://github.com/TuffNetwork/TuffX-Plugin/releases/download/1.2.0/TuffX.jar"
-            download>Download Y0 Plugin 1.2.0</a>
-          <a href="https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Errors? Try this
-            first!</a>
+            <a href="slither.html" class="game-card">
+                <h3>Slither.io</h3>
+                <p>Classic snake multiplayer</p>
+            </a>
+
+            <a href="flappy.html" class="game-card">
+                <h3>Flappy Bird</h3>
+                <p>Tap to navigate</p>
+            </a>
+
+            <a href="TuffClient/" class="game-card">
+                <h3>Minecraft 1.12</h3>
+                <p>Tap to navigate</p>
+            </a>
+
+            <a href="2048.html" class="game-card">
+                <h3>2048</h3>
+                <p>Puzzle number game</p>
+            </a>
+
+            <a href="tetris.html" class="game-card">
+                <h3>Tetris</h3>
+                <p>Classic block puzzle</p>
+            </a>
+
+            <a href="diep.html" class="game-card">
+                <h3>Diep.io</h3>
+                <p>Tank battle arena</p>
+            </a>
+
+            <a href="skribbl.html" class="game-card">
+                <h3>Skribbl.io</h3>
+                <p>Drawing and guessing</p>
+            </a>
+
+            <a href="quickdraw.html" class="game-card">
+                <h3>Quick Draw</h3>
+                <p>AI drawing game</p>
+            </a>
+
+            <a href="dino.html" class="game-card">
+                <h3>Dino Game</h3>
+                <p>Offline chrome game</p>
+            </a>
+
+            <a href="geoguessr.html" class="game-card">
+                <h3>GeoGuessr</h3>
+                <p>Geography location game</p>
+            </a>
+
+            <a href="balatro.html" class="game-card">
+                <h3>Balatro</h3>
+                <p>Card game</p>
+            </a>
+
+            <a href="pong.html" class="game-card">
+                <h3>Pong</h3>
+                <p>Classic arcade game</p>
+            </a>
+
+            <a href="papas.html" class="game-card">
+                <h3>Papa's Games</h3>
+                <p>Management games</p>
+            </a>
+
+            <a href="sporcle.html" class="game-card">
+                <h3>Sporcle</h3>
+                <p>Trivia quizzes</p>
+            </a>
+
+            <a href="pokemon.html" class="game-card">
+                <h3>Pokémon Showdown</h3>
+                <p>Pokémon battles</p>
+            </a>
+
+            <a href="chess.html" class="game-card">
+                <h3>Chess.com</h3>
+                <p>Play chess online</p>
+            </a>
         </div>
-      </section>
-
-      <section class="builds">
-        <h2>Latest Build</h2>
-        <ul>
-          <li>Play: <a href="files/1_1UT12/WASM/">1.1UT12 (WASM)</a> | <a href="files/1_1UT12/JS/">1.1UT12 (JS)</a></li>
-          <li>Download: <a href="files/1_1UT12/WASM/Tuff_Client_Offline_WASM.html" download>1.1UT12 WASM OFFLINE</a> |
-            <a href="files/1_1UT12/JS/Tuff_Client_JS.html" download>1.1UT12 JS OFFLINE</a></li>
-            <li>Latest Release Builds: <a href="https://github.com/TuffNetwork/Tuff-Client-Builds/releases/tag/1.1UT12">Go</a></li>
-
-          </ul>
-
-
-        <section class="support">
-          <h2>🛠 Support</h2>
-          <ul>
-            <li><a href="https://discord.com/invite/7UnXG6bE3b">Report Bugs on Discord</a></li>
-            <li><a href="https://github.com/TuffNetwork/BrickTesting">Host Your Own</a></li>
-          </ul>
-        </section>
-
-        <section class="archive">
-          <h2>Archived Builds</h2>
-          <ul>
-            <li><a href="files/1_1UT11/WASM/">1.1UT11 (WASM)</a></li>
-            <li><a href="files/1_1UD10/WASM/">1.1UD10 (WASM)</a></li>
-            <li><a href="files/1_1UT9/WASM/">1.1UT9 (WASM)</a></li>
-            <li><a href="files/1_1UT8/WASM/">1.1UT8 (WASM)</a></li>
-            <li><a href="files/1_1UT7/WASM/">1.1UT7 (WASM)</a></li>
-            <li><a href="files/1_1UT6/WASM/">1.1UT6 (WASM)</a></li>
-            <li><a href="files/1_1UT6/JS/">1.1UT6 (JS)</a></li>
-            <li><a href="files/1_1UT5/WASM/">1.1UT5 (WASM)</a></li>
-            <li><a href="files/1_1UT5/JS/">1.1UT5 (JS)</a></li>
-          </ul>
-        </section>
-
-        <aside class="notes">
-          <h3>Release Notes</h3>
-          <p><strong>Latest Version:</strong> 1.1UT12 — Published on: Dec 30, 2025</p>
-          <ul>
-            <li>Recording Studio</li>
-            <li>Fixed crash for WebGL 1.0</li>
-
-          </ul>
-        </aside>
     </main>
 
-    <footer class="status-bar">Status: Active</footer>
-  </div>
+    <footer>
+        <p>No installations required • Play directly in browser</p>
+    </footer>
 </body>
-
 </html>

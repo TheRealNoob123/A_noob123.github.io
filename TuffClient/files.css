@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 2rem 0 1rem 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #6b9eff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8bb5ff;
+}
+
+.hero {
+    margin-bottom: 3rem;
+}
+
+.lead {
+    color: #999;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #242424;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.btn-primary:hover {
+    background-color: #2a2a2a;
+    border-color: #555;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #6b9eff;
+    border-color: #444;
+}
+
+.btn-secondary:hover {
+    background-color: #242424;
+    border-color: #555;
+}
+
+.proxy-section {
+    margin-bottom: 3rem;
+}
+
+.proxy-card {
+    background-color: #242424;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.proxy-card .link {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.username {
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.resource-card {
+    background-color: #242424;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    background-color: #2a2a2a;
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.resource-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.resource-card p {
+    color: #999;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.archived-builds {
+    margin-bottom: 3rem;
+}
+
+.builds-list {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.build-item {
+    background-color: #242424;
+    border: 1px solid #333;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.build-item:hover {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.build-item span {
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.build-item a {
+    margin-left: 1rem;
+}
+
+.release-notes {
+    margin-bottom: 2rem;
+}
+
+.notes-card {
+    background-color: #242424;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.notes-card h3 {
+    margin-bottom: 1rem;
+}
+
+.notes-card ul {
+    margin-left: 1.5rem;
+    color: #ccc;
+}
+
+.notes-card li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a2a2a;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .build-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .build-item span {
+        margin-bottom: 0.5rem;
+    }
+}
+
