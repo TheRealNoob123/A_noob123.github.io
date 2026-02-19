@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess.com</title>
-    <style>
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -60,28 +53,10 @@
 
         .game-box {
             width: 100%;
-            max-width: 800px;
+            max-width: 1200px;
+            height: 600px;
             aspect-ratio: 1;
             border: 1px solid #333;
             background-color: #242424;
             border-radius: 4px;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Chess.com</h1>
-        <a href="index.html"><button class="back-btn">Back</button></a>
-    </header>
-
-    <main>
-        <div class="game-box"></div>
-    </main>
-
-    <script>
-        document.querySelector('.back-btn').addEventListener('click', () => {
-            window.location.href = 'games.html';
-        });
-    </script>
-</body>
-</html>
