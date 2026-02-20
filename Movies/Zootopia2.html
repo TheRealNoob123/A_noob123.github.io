@@ -3,70 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movies.css">
     <title>Zootopia 2</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            padding: 1.5rem 2rem;
-            border-bottom: 1px solid #2a2a2a;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        .back-btn {
-            background: none;
-            border: 1px solid #333;
-            color: #e0e0e0;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .back-btn:hover {
-            background-color: #242424;
-            border-color: #444;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .game-box {
-            width: 100%;
-            max-width: 800px;
-            aspect-ratio: 1;
-            border: 1px solid #333;
-            background-color: #242424;
-            border-radius: 4px;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -76,7 +15,22 @@
 
     <main>
         <div class="game-box">
-            <iframe src="https://vidfast.pro/tv/tt6741278/2/4?autoPlay=true" frameborder="0" allowfullscreen></iframe>
+        <video id="player" controls width="100%" style="max-width: 900px;"></video>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  const video = document.getElementById('player');
+  const src = "https://p.10020.workers.dev/nightbreeze17.site/file2/gbFtj~KVbTvgRnKRId8jUML8EmU+aIV+LVwYVyr9yisO4HvK+x65DVUjDxZGkRgOz5Di4l6K9A4bU0OPIuBmJnQuHYBvXCg~ggZRWCPp5ETissaQ4mF9GgXNi1Q1n91iCdOXAMx~B3M6WNRXl5k6My3tIRnS6Pq3x4OPHV61ag0=/cGxheWxpc3QubTN1OA==.m3u8";
+
+  if (Hls.isSupported()) {
+    const hls = new Hls();
+    hls.loadSource(src);
+    hls.attachMedia(video);
+  } else {
+    // Safari fallback
+    video.src = src;
+  }
+</script>   
         </div>
     </main>
 
