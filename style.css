@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOVIES</title>
-    <style>
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -54,7 +47,7 @@
 
         .game-card-normal {
             background-color: #242424;
-            border: 1px solid #069e1a;
+            border: 1px solid #353635;
             padding: 1.5rem;
             text-decoration: none;
             color: #e0e0e0;
@@ -82,7 +75,7 @@
             border-radius: 4px;
         }
 
-        .game-card:hover {
+        .game-card-normal:hover {
             background-color: #2a2a2a;
             border-color: #444;
             transform: translateY(-2px);
@@ -128,26 +121,18 @@
                 gap: 1rem;
             }
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>MOVIES</h1>
-        <p class="subtitle"><strong>Adding More Soon! Red = broken (or not yet added), Green = working</strong></p><br>
-        <p class="subtitle">If you find any movies that are not working, please report them to us so we can fix them!</p>
-        <p class="subtitle">Share your feedback with us! <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfCaXfmU3Lz8o2iyJFM_Har6dorvAaWTcQPKPIEBDDqbkM-Mw/viewform" target="_blank">Report a Bug</a> - <a href="https://forms.gle/gzugZCHnwTMBAABh6" target="_blank">Apply for Staff</a></p>
-        
-    </header>
 
-    <main>
-        <div class="games-grid">
+        a {
+            text-decoration: none;
+            color: #bcbcbc;
+        }
 
-           
-        </div>
-    </main>
+        a:hover {
+            color: #e0e0e0;
+        }
 
-    <footer>
-        <p>Made By A_noob123 and games found by JDgamer445</p>
-    </footer>
-</body>
-</html>
+         .game-card-broken:hover {
+            background-color: #2a2a2a;
+            border-color: #9e0606;
+            transform: translateY(-2px);
+        }
